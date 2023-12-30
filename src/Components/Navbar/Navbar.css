@@ -83,11 +83,11 @@
         cursor: pointer;
         position: relative;
         left: 2rem;
-        top: 1rem;
+        top: 3rem;
         z-index: 10000;
     }
     .logo{
-        margin-top: 1.5rem;
+        margin-top: 6rem;
         text-shadow: 2px 2px 10px rgb(255, 255, 255);
     }
     .nav-ul{
@@ -109,7 +109,7 @@
         display: block;
         position: absolute;
         top: 30rem;
-        left: 7rem;
+        left: 9rem;
         margin: 1rem;
         transform: translate(-550px);
         transition: 0.5s ease;
