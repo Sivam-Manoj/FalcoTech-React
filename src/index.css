@@ -1,0 +1,17 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+.main-bg{
+  width: 100%;
+  height: auto;
+  background-color: rgb(255, 255, 255);
+  overflow-x: hidden;
+}
+.about-bg{
+  width: 100%;
+  background-color: azure;
+  overflow-x: hidden;
+}

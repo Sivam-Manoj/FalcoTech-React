@@ -1,0 +1,93 @@
+.btn1{
+    background-color: azure;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 70%;
+    right: 5rem;
+    width: 400px;
+    height: 80px;
+    border-radius: 10px;
+    padding: 1rem;
+    z-index: -1;
+    box-shadow:2px 2px 10px rgb(65, 170, 255);
+}
+ a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+
+}
+.btn1 span{
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: relative;
+    top: 20%;
+    user-select: none;
+    margin-left: 2rem;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.558);
+}
+.btn1:hover, .btn1:focus{
+    color: rgb(255, 255, 255);
+    background-color: lightskyblue;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.hand{
+    width: 90px;
+    height: 70px;
+    position: absolute;
+    left: 70%;
+    top: 10px;
+    border: none;
+}
+.scroll{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    right: 1rem;
+    bottom: 0;
+}
+.scroll2{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: 1rem;
+    bottom: 0;
+}
+@media only screen and (max-width:667px){
+    .btn-bg{
+        position: relative;
+        width: 80px;
+        left: 22rem;
+        top: 80%;
+
+    }
+    .btn1{
+        width: 300px;
+        height: 60px;
+        position: relative;
+        right: 20rem;
+    }
+    .hand{
+        width: 50px;
+        left:12.9rem;
+        top: -5px;
+       
+    }
+    .btn1 span{
+        font-size: 1.1rem;
+        position: relative;
+        right: 1rem;
+        top: -5px;
+    }
+    .scroll2{
+        display: none;
+    }
+    .scroll{
+        width: 70px;
+        height: 70px;
+        position: relative;
+        right: 2.5rem;
+        top: 0.2rem;
+    }
+}

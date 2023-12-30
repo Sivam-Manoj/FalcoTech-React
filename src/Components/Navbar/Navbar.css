@@ -1,0 +1,131 @@
+.navbar{
+    backdrop-filter: blur(1px);
+    width: 100%;
+    height: 70px;
+    color: aliceblue;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.menu-icon{
+    display: none;
+}
+.nav-ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    width: 50%;
+    
+
+}
+.nav-ul li a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 1.2rem;
+    transition: all 0.3s ease;
+}
+.logo{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: aliceblue;
+    text-decoration: none;
+    cursor: pointer;
+}
+.nav-ul li a:hover, .nav-ul li a:focus,.home-active a{
+    background-color: rgba(255,255,255,0.2);
+    text-shadow: -2px 2px 10px rgba(255,255,255,1);
+
+}
+.contact a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 1.2rem;
+    transition: all 0.3s ease;
+
+}
+.contact{
+    background-color: #f1356d;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    color: aliceblue;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}   
+.contact:hover, .contact:focus{
+    background-color: rgb(0, 162, 255);
+}
+@media only screen and (max-width:667px){
+    .nav-ul{
+        display: none;
+    }
+    .contact{
+        display: none;
+    }
+    .menu-icon{
+        display: block;
+        font-size: 3rem;
+        cursor: pointer;
+        position: relative;
+        left: 2rem;
+        top: 1rem;
+        z-index: 10000;
+    }
+    .logo{
+        margin-top: 1.5rem;
+        text-shadow: 2px 2px 10px rgb(255, 255, 255);
+    }
+    .nav-ul{
+        display: block;
+        position: absolute;
+        top: 0;
+        line-height: 8.5rem;
+        background: linear-gradient(to right, black, #200a2d,black);
+        width: 100vw;
+        height: 100vh;
+        left: 0;
+        text-align: center;
+        transform: translate(-550px);
+        transition: 0.5s ease;
+        z-index: 3;
+        overflow: hidden;
+    }
+    .contact{
+        display: block;
+        position: absolute;
+        top: 30rem;
+        left: 7rem;
+        margin: 1rem;
+        transform: translate(-550px);
+        transition: 0.5s ease;
+        z-index: 5;
+        
+    }
+    .nav-ul.active{
+        transform: translate(0px);
+        transition: 0.5s ease;
+    }
+    .contact.active{
+        transform: translate(0px);
+        transition: all 0.5s ease;
+    }
+    .menu-icon:hover{
+        color: rgba(255, 255, 255, 0.645);
+        transition: 0.5s ease;
+    }
+}

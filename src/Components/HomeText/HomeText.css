@@ -1,0 +1,52 @@
+.Text{
+    font-size: 3rem;
+    font-weight: 500;
+    color: #fff;
+    text-wrap: nowrap;
+    position: absolute;
+    z-index: -1;
+    overflow: hidden;
+    top: 32rem;
+    left: 9rem;
+}
+.Text h3{
+    left: 5rem;
+    position: relative;
+    color: goldenrod;
+}
+.animate{
+    width: 700px;
+    position: absolute;
+    left: 5rem;
+    top: 12.5rem;
+    z-index: -2;
+}
+@media only screen and (max-width: 667px){
+    .Text{
+        font-size: 1.5rem;
+        left: 2rem;
+        top: 24.5rem;
+    }
+    .Text h3{
+        font-size: 1.5rem;
+        left: 4rem;
+        position: relative;
+        color: goldenrod;
+    }
+    
+    .animate{
+        width: 300px;
+        position: absolute;
+        left: 2.5rem;
+        top: 4.5rem;
+        z-index: -2;
+    }
+    .animation{
+        position: absolute;
+        top: 7rem;
+        width: 300px;
+        height: 300px;
+        left: 0;
+        z-index: -1;
+    }
+}
